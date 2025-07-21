@@ -1,4 +1,4 @@
-weather = input("What's the weather like today? (sunny/rainy/cold):").lower()
+weather = input("What's the weather like today? (sunny/rainy/cold):")
 recomendation = ""
 
 if weather == 'sunny':
