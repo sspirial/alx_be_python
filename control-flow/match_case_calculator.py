@@ -1,17 +1,17 @@
-number_1 = int(input("Enter first number: "))
-number_2 = int(input("Enter second number: "))
+number_1 = input("Enter first number: ")
+number_2 = input("Enter second number: ")
 operation = input("Choose the operation (+, -, *, /): ")
 result = 0
 
 match operation:
     case "+":
-        result = number_1 + number_2
+        result = int(number_1) + int(number_2)
     case "-":
-        result = number_1 - number_2
+        result = int(number_1) - int(number_2)
     case "*":
-        result = number_1 * number_2
+        result = int(number_1) * int(number_2)
     case "/":
-        result = number_1 / number_2
+        result = int(number_1) / int(number_2)
     case _:
         result = "Invalid operation"
 
