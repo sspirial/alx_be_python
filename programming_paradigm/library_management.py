@@ -1,4 +1,15 @@
 class Book:
+    def check_out(self):
+        if not self._is_checked_out:
+            self._is_checked_out = True
+            return True
+        return False
+
+    def return_book(self):
+        if self._is_checked_out:
+            self._is_checked_out = False
+            return True
+        return False
     def __str__(self):
         return f"{self.title} by {self.author}" 
     def __init__(self, title, author):
